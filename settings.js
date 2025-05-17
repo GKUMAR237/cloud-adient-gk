@@ -39,7 +39,7 @@ module.exports = {
     httpNodeRoot: "/",
 
     ui: {
-        path: "dashboard"
+        path: "run"
     },
 
     httpNodeMiddleware: function (req, res, next) {
@@ -50,14 +50,14 @@ module.exports = {
         }
     },
 
-    adminAuth: {
-        type: "credentials",
-        users: [{
-            username: "admin",
-            password: "$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN.",
-            permissions: "*"
-        }]
-    },
+    //adminAuth: {
+        //type: "credentials",
+        //users: [{
+            //username: "admin",
+            //password: "$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN.",
+            //permissions: "*"
+        //}]
+    //},
 
     //https: {
     //  key: require("fs").readFileSync('privkey.pem'),
