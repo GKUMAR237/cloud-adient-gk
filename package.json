@@ -2,7 +2,18 @@
     "name": "ADIENT-GK",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "@flowfuse/node-red-dashboard": "1.24.0",
+        "node-red-contrib-aedes": "0.6.0",
+        "node-red-contrib-mcprotocol": "1.2.1",
+        "node-red-contrib-moment": "5.0.0",
+        "node-red-contrib-mssql": "0.0.7",
+        "node-red-contrib-postgresql": "0.14.2",
+        "node-red-contrib-telegrambot": "16.0.2",
+        "node-red-dashboard": "3.6.5",
+        "node-red-node-serialport": "2.0.3",
+        "node-red-node-ui-table": "0.4.3"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flows.json",
