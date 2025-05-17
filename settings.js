@@ -108,36 +108,26 @@ module.exports = {
 /*******************************************************************************
  * Editor Settings
  ******************************************************************************/
-
-    editorTheme: {
-        page: {
-            title: "ADIENT"
-        },
-
-        palette: {
-            //categories: ['subflows', 'common', 'function', 'network', 'sequence', 'parser', 'storage'],
-        },
-
-        projects: {
-            enabled: true,
-            workflow: {
-                mode: "manual"
-            }
-        },
-
-        codeEditor: {
-            lib: "monaco",
-            options: {
-                //theme: "vs",
-            }
-        },
-
-        markdownEditor: {
-            mermaid: {
-                enabled: true
-            }
-        },
+editorTheme: {
+    theme: {
+        name: "ADIENT"
     },
+    palette: { },
+    projects: {
+        enabled: true
+    },
+    codeEditor: {
+        lib: "monaco",
+        options: {
+            theme: "vs-dark"
+        }
+    },
+    markdownEditor: {
+        mermaid: {
+            enabled: true
+        }
+    }
+},
 
 /*******************************************************************************
  * Node Settings
