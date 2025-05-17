@@ -1,13 +1,5 @@
 [
     {
-        "id": "e1cfdd2ed3912053",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "299a5e821c565bab",
         "type": "tab",
         "label": "DAYWISE",
@@ -256,16 +248,6 @@
         }
     },
     {
-        "id": "0b7ff7bfce730c1e",
-        "type": "ui_group",
-        "name": "Flipping Dashboard",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "12",
-        "collapse": false
-    },
-    {
         "id": "76d85a1ecc8be4eb",
         "type": "ui_base",
         "theme": {
@@ -349,7 +331,7 @@
             "hideToolbar": "false",
             "allowSwipe": "false",
             "lockMenu": "false",
-            "allowTempTheme": "true",
+            "allowTempTheme": "false",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
                 "sx": 48,
@@ -1579,36 +1561,6 @@
         "height": 1
     },
     {
-        "id": "6b262dfc55dc9413",
-        "type": "ui_spacer",
-        "z": "5ccdd863f339e5b3",
-        "name": "spacer",
-        "group": "",
-        "order": 15,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "fc7066d224520ca4",
-        "type": "ui_spacer",
-        "z": "5ccdd863f339e5b3",
-        "name": "spacer",
-        "group": "",
-        "order": 2,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "760c5b5dfc0cccab",
-        "type": "ui_spacer",
-        "z": "5ccdd863f339e5b3",
-        "name": "spacer",
-        "group": "",
-        "order": 4,
-        "width": 4,
-        "height": 1
-    },
-    {
         "id": "5753b20e20cbb029",
         "type": "ui_spacer",
         "z": "299a5e821c565bab",
@@ -2288,16 +2240,6 @@
         "hidden": false
     },
     {
-        "id": "168b4a9e8d70923d",
-        "type": "ui_spacer",
-        "z": "299a5e821c565bab",
-        "name": "spacer",
-        "group": "0b7ff7bfce730c1e",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "0576513590b8b648",
         "type": "ui_group",
         "name": "LAST 8 HOURS DATA (CELL-1)",
@@ -2354,77 +2296,6 @@
         "width": 19,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "f312b9d97d7a306f",
-        "type": "ui_group",
-        "name": "Production",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "12",
-        "collapse": false
-    },
-    {
-        "id": "cfc9f1657e608f95",
-        "type": "ui_group",
-        "name": "hidden_group",
-        "tab": "",
-        "order": 1,
-        "disp": false,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "0a163c39158f4781",
-        "type": "ui_group",
-        "name": "Group 1",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": 12,
-        "collapse": false
-    },
-    {
-        "id": "e31d692d563c9678",
-        "type": "ui_group",
-        "name": "Group 2",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": 12,
-        "collapse": false
-    },
-    {
-        "id": "f0ee9db4e2631932",
-        "type": "ui_group",
-        "name": "Test Group",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "d530fdbe67f26caa",
-        "type": "ui_group",
-        "name": "Charts",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "12",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "a99e6a72f24047c6",
-        "type": "ui_group",
-        "name": "Login Group",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6"
     },
     {
         "id": "11a00366e321fcb9",
@@ -8029,27 +7900,6 @@
         ]
     },
     {
-        "id": "4f23bdcc68e01db8",
-        "type": "ui_template",
-        "z": "5ccdd863f339e5b3",
-        "group": "cfc9f1657e608f95",
-        "name": "Clock Toolbar",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "format": "<script id=\"titleScript\" type=\"text/javascript\">\n    $(function () {\n    if ($('.md-toolbar-tools').length != 0) {\n        loadHeaderElements();\n    } else {\n        setTimeout(loadHeaderElements, 500);\n    }\n});\n\nfunction loadHeaderElements() {\n    $('#demoTitle').remove();\n    $('#clockContainer').remove();\n\n    var toolbar = $('.md-toolbar-tools');\n\n    // --- Centered DEMO VERSION ---\n    var titleSpan = $('<span/>', {\n        id: 'demoTitle',\n        text: 'DEMO VERSION',\n        css: {\n            position: 'absolute',\n            left: '50%',\n            transform: 'translateX(-50%)',\n            fontWeight: 'bold',\n            fontSize: '25px',\n            color: 'FFFFFF', // red text\n        }\n    });\n\n    // --- Right-side clock ---\n    var clockDiv = $('<div/>', { id: 'clockContainer' });\n    var clockText = $('<p/>', { id: 'clock' });\n\n    clockDiv.append(clockText);\n    clockDiv.css({\n        margin: '5px 5px 5px auto',\n    });\n\n    toolbar.css('position', 'relative'); // Ensure relative position for absolute centering\n    toolbar.append(titleSpan);\n    toolbar.append(clockDiv);\n\n    function updateClock() {\n        var d = new Date();\n        $('#clock').text(d.toLocaleString());\n    }\n\n    if (document.clockInterval) {\n        clearInterval(document.clockInterval);\n    }\n\n    document.clockInterval = setInterval(updateClock, 1000);\n}\n</script>",
-        "storeOutMessages": false,
-        "fwdInMessages": false,
-        "resendOnRefresh": false,
-        "templateScope": "global",
-        "className": "",
-        "x": 1480,
-        "y": 700,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "44d52dcd10eb47c9",
         "type": "ui_template",
         "z": "5ccdd863f339e5b3",
@@ -8958,7 +8808,7 @@
         "type": "ui_button",
         "z": "5ccdd863f339e5b3",
         "name": "Refresh Chart",
-        "group": "d530fdbe67f26caa",
+        "group": "",
         "order": 2,
         "width": "3",
         "height": "1",
@@ -9430,6 +9280,27 @@
         "libs": [],
         "x": 750,
         "y": 1820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4ebb031bd8097696",
+        "type": "ui_template",
+        "z": "5ccdd863f339e5b3",
+        "group": "",
+        "name": "Clock Toolbar",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<script id=\"titleScript\" type=\"text/javascript\">\n    $(function () {\n    if ($('.md-toolbar-tools').length != 0) {\n        loadHeaderElements();\n    } else {\n        setTimeout(loadHeaderElements, 500);\n    }\n});\n\nfunction loadHeaderElements() {\n    $('#demoTitle').remove();\n    $('#clockContainer').remove();\n\n    var toolbar = $('.md-toolbar-tools');\n\n    // --- Centered DEMO VERSION ---\n    var titleSpan = $('<span/>', {\n        id: 'demoTitle',\n        text: 'DEMO VERSION',\n        css: {\n            position: 'absolute',\n            left: '50%',\n            transform: 'translateX(-50%)',\n            fontWeight: 'bold',\n            fontSize: '25px',\n            color: 'FFFFFF', // red text\n        }\n    });\n\n    // --- Right-side clock ---\n    var clockDiv = $('<div/>', { id: 'clockContainer' });\n    var clockText = $('<p/>', { id: 'clock' });\n\n    clockDiv.append(clockText);\n    clockDiv.css({\n        margin: '5px 5px 5px auto',\n    });\n\n    toolbar.css('position', 'relative'); // Ensure relative position for absolute centering\n    toolbar.append(titleSpan);\n    toolbar.append(clockDiv);\n\n    function updateClock() {\n        var d = new Date();\n        $('#clock').text(d.toLocaleString());\n    }\n\n    if (document.clockInterval) {\n        clearInterval(document.clockInterval);\n    }\n\n    document.clockInterval = setInterval(updateClock, 1000);\n}\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 1360,
+        "y": 680,
         "wires": [
             []
         ]
@@ -16712,7 +16583,7 @@
         "type": "ui_chart",
         "z": "990647560aae96b0",
         "name": "Production Chart",
-        "group": "f312b9d97d7a306f",
+        "group": "",
         "order": 2,
         "width": 0,
         "height": 0,
@@ -16746,7 +16617,7 @@
         "id": "6c9ed342f7f1d212",
         "type": "ui_text",
         "z": "990647560aae96b0",
-        "group": "f312b9d97d7a306f",
+        "group": "",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -16959,7 +16830,7 @@
         "id": "e940704441e45b84",
         "type": "ui_template",
         "z": "cf444a0c82b7cb13",
-        "group": "0a163c39158f4781",
+        "group": "",
         "name": "Bar Chart - Group 1",
         "order": 1,
         "width": 12,
@@ -16980,7 +16851,7 @@
         "id": "ea7274ed8c67bad0",
         "type": "ui_template",
         "z": "cf444a0c82b7cb13",
-        "group": "e31d692d563c9678",
+        "group": "",
         "name": "Bar Chart - Group 2",
         "order": 1,
         "width": 12,
