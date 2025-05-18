@@ -7031,7 +7031,7 @@
         "finalize": "",
         "libs": [],
         "x": 630,
-        "y": 720,
+        "y": 700,
         "wires": [
             [
                 "099a4075f367d0c2",
@@ -7051,7 +7051,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
+        "x": 690,
         "y": 780,
         "wires": [
             [
@@ -7134,7 +7134,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 700,
+        "y": 660,
         "wires": [
             [
                 "099a4075f367d0c2",
@@ -7181,7 +7181,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 470,
-        "y": 720,
+        "y": 700,
         "wires": [
             [
                 "3565c29f43a4b6cf"
@@ -7225,8 +7225,8 @@
         "columns": [],
         "outputs": 0,
         "cts": false,
-        "x": 1080,
-        "y": 720,
+        "x": 1100,
+        "y": 760,
         "wires": []
     },
     {
@@ -7286,7 +7286,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 1160,
+        "y": 1180,
         "wires": [
             [
                 "65a1db13693d5545",
@@ -7407,7 +7407,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
+        "x": 470,
         "y": 1200,
         "wires": [
             [
@@ -7682,8 +7682,8 @@
         "columns": [],
         "outputs": 0,
         "cts": false,
-        "x": 1080,
-        "y": 680,
+        "x": 1100,
+        "y": 600,
         "wires": []
     },
     {
@@ -10923,21 +10923,6 @@
             {
                 "label": "BREAKDOWN HISTORY",
                 "value": " break_down_history",
-                "type": "str"
-            },
-            {
-                "label": "DAILY REJECTION HISTORY",
-                "value": " QT_DAILY_REJECTION_HISTORY",
-                "type": "str"
-            },
-            {
-                "label": "DAILY PRODUCTION",
-                "value": " MC_DAILY_PRODUCTION_2",
-                "type": "str"
-            },
-            {
-                "label": "TOOL LIFE",
-                "value": "tool_life",
                 "type": "str"
             }
         ],
