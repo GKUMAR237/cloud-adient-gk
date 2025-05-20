@@ -9378,23 +9378,6 @@
         ]
     },
     {
-        "id": "11b6b294657fa397",
-        "type": "e-mail",
-        "z": "5ccdd863f339e5b3",
-        "server": "smtp.gmail.com",
-        "port": "465",
-        "authtype": "BASIC",
-        "saslformat": true,
-        "token": "oauth2Response.access_token",
-        "secure": true,
-        "tls": true,
-        "name": "",
-        "dname": "",
-        "x": 1750,
-        "y": 340,
-        "wires": []
-    },
-    {
         "id": "38a3b5665cd675bc",
         "type": "ui_text_input",
         "z": "b3922748f6dbb361",
@@ -17304,5 +17287,26 @@
         "x": 1280,
         "y": 620,
         "wires": []
+    },
+    {
+        "id": "custom-logo-template",
+        "type": "ui_template",
+        "z": "cf444a0c82b7cb13",
+        "group": "7c1bb3377e665bf6",
+        "name": "Insert Custom Logo",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<script>\n    $(function () {\n        const interval = setInterval(() => {\n            const header = document.querySelector('.md-toolbar-tools');\n            if (header && !document.getElementById('customLogo')) {\n                const logo = document.createElement('img');\n                logo.src = '/logo.png'; // This file should be in your public folder\n                logo.id = 'customLogo';\n                logo.style.height = '40px';\n                logo.style.marginRight = '10px';\n                logo.style.objectFit = 'contain';\n                header.insertBefore(logo, header.firstChild);\n                clearInterval(interval);\n            }\n        }, 100);\n    });\n</script>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 910,
+        "y": 240,
+        "wires": [
+            []
+        ]
     }
 ]
